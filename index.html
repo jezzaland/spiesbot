@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body onload=hello()>
 <head>
 <style>
 p{
-font-size:50px;}
+font-size:100px;}
+img{
+height:30%;
+width:30%;
+float:left;}
+button{font-size:50px;}
 </style>
 </head>
-
+<button onclick=hello()>more spy intel</button>
 <p id="print"></p>
 <img id="head"></img>
 <p id="quote"></p>
@@ -17,14 +22,36 @@ const quotes = ["DW OH CRUMBS ME BUM'S COME UNDONE",
 				"DW James Bond. Agent Ooh Seven",
 				"AT YOU RANG??????",
 				"AT The woman... or the herb?",
-				"SI I was born and raised on the East coast of Guernsey"];
-let a = Math.floor(Math.random()*5);
+				"SI I was born and raised on the East coast of Guernsey",
+				"EP You think a sinister minister illicitly solicited a conspirator?",
+				"SI Hmmmmmmmm?",
+				"SI The broken sword shimmers in the night",
+				"JB I'm a bird watcher watcher. I was just admiring Alan over there",
+				"SI We can do it, friend!",
+				"LB Female, mid thirties, attractive. Male, mid thirties... fanny pack",
+				"SI .......Jesus?!",
+				"EP It's the person you medium suspect",
+				"BW Tadworth Cakes and Bakes. We're on the High Street",
+				"JB Keep your voice down, sweetie, we're undercover",
+				"SI A little bench!",
+				"AT It's not that kind of hotel",
+				"JB I think that gentleman just asked for a threesome",
+				"AT Er... A man... Running around... On fire!",
+				"DW Pig is he? Ruffian? Sad sack? A boob?",
+				"SI Commencing operation best friend",
+				"AT ....It's haunted.... Whoever looks at this brochure dies the very next day",
+				"AT But the ring's in the cake!",
+				"BW Marco's balls aren't going to smack themselves around are they?"
+				];
+				
+function hello(){
+let a = Math.floor(Math.random()*quotes.length);
 let b = quotes[a]
 let c = b.substr(0, 2)
 let d = c+".png"
 let e = b.substr(3)
 document.getElementById("head").src=d;
-document.getElementById("quote").textContent=e;
+document.getElementById("quote").textContent=e;}
 
 </script>
 
