@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+p{
+font-size:50px;}
+</style>
+</head>
+
+<p id="print"></p>
+<img id="head"></img>
+<p id="quote"></p>
+
+<script>
+const quotes = ["DW OH CRUMBS ME BUM'S COME UNDONE",
+				"DW James Bond. Agent Ooh Seven",
+				"AT YOU RANG??????",
+				"AT The woman... or the herb?",
+				"SI I was born and raised on the East coast of Guernsey"];
+let a = Math.floor(Math.random()*5);
+let b = quotes[a]
+let c = b.substr(0, 2)
+let d = c+".png"
+let e = b.substr(3)
+document.getElementById("head").src=d;
+document.getElementById("quote").textContent=e;
+
+</script>
+
+</body>
+</html>
